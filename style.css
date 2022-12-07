@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    max-width: 1140px;
+    background-color: hsl(217, 54%, 11%);
+    margin: auto;
+    font-family:'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: calc(100vh - 100px);
+}
+
+.box{
+    border-radius: 15px;
+    width: 290px;
+    height: 500px;
+}
+
+.content-box{
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;    
+}
+
+.photo-area{
+    width: 250px;
+}
+
+.photo-area img{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.photo-view{
+    position: absolute;          /* fica acima da foto*/
+    background-color:rgba(0, 255, 247, 0.5);
+    width: inherit;            
+    display: none;              /* fica NONE, pois só vai aparecer, quando passarmos o mouse em PHOTOarea*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon{
+    width: 50px;
+}
+
+ .photo-area:hover .photo-view{
+    display: flex;
+}
+.area-avatar{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  
+}
+
+#avatar{
+    width: 28px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.box p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.ETH{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.content-box hr{
+    border-color:hsl(215, 32%, 27%);
+}
+
+.content-box h1{
+    font-weight: 700;
+}
+
+.content-box a{
+    text-decoration: none;
+    color:#fff ;
+}
+.content-box a:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+picture img:hover{
+    background-image: url('images/icon-view.svg');
+    background-color: hsl(178, 100%, 50%);
+    
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: #fff
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    color: hsl(178, 100%, 50%);
+}
